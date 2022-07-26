@@ -85,6 +85,10 @@
 }
 
 - (void)uploadData{
+    if ([DoraemonManager shareInstance].disableCollectionAppInfo) {
+        return;
+    }
+    
     if(self.pointArray.count > 0){
         [self.basicInfoDic setValue:self.pointArray forKey:@"events"];
         NSMutableDictionary *params = [self.basicInfoDic copy];

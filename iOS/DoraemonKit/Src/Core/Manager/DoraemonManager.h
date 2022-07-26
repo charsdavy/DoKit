@@ -164,6 +164,7 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
 
 - (void)hiddenHomeWindow;
 
+
 @property (nonatomic, assign) int64_t bigImageDetectionSize; // 外部设置大图检测的监控数值  比如监控所有图片大于50K的图片 那么这个值就设置为 50 * 1024；
 
 @property (nonatomic, copy) NSString *startClass; //如果你的启动代理不是默认的AppDelegate,需要传入才能获取正确的启动时间
@@ -175,6 +176,7 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
 /// DoKit 支持的旋转方向
 @property (assign, nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
 
+@property (assign, nonatomic) BOOL disableCollectionAppInfo;
 
 - (void)configEntryBtnBlingWithText:(nullable NSString *)text backColor:(nullable UIColor *)backColor;
 @end
