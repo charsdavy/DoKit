@@ -91,6 +91,7 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     if (self) {
         _autoDock = YES;
         _keyBlockDic = [[NSMutableDictionary alloc] init];
+        _disableCollectionAppInfo = YES;
     }
     return self;
 }
@@ -192,7 +193,9 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     }
     
     //统计开源项目使用量 不用于任何恶意行为
-    [[DoraemonStatisticsUtil shareInstance] upLoadUserInfo];
+    if (!self.disableCollectionAppInfo) {
+        [[DoraemonStatisticsUtil shareInstance] upLoadUserInfo];
+    }
     
     //拉取最新的mock数据
     [[DoraemonMockManager sharedInstance] queryMockData:^(int flag) {
@@ -206,7 +209,7 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 #endif
     
     //开启健康体检
-    if ([[DoraemonCacheManager sharedInstance] healthStart]) {
+    if ([[DoraemonCacheManager sharedInstance] healthStart] && !self.disableCollectionAppInfo) {
         [[DoraemonHealthManager sharedInstance] startHealthCheck];
     }
     
@@ -433,7 +436,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
         _entryWindow.hidden = YES;
      }
 }
-
 
 - (void)addH5DoorBlock:(void(^)(NSString *h5Url))block{
     self.h5DoorBlock = block;
