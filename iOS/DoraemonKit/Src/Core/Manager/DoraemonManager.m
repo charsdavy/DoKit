@@ -38,11 +38,6 @@
 #import "DoraemonCocoaLumberjackListViewController.h"
 #endif
 
-#if DoraemonWithWeex
-#import "DoraemonWeexLogDataSource.h"
-#import "DoraemonWeexInfoDataManager.h"
-#endif
-
 
 #define kTitle        @"title"
 #define kDesc         @"desc"
@@ -202,12 +197,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
         DoKitLog(@"mock get data, flag == %i",flag);
     }];
     
-    //Weex工具的初始化
-#if DoraemonWithWeex
-    [DoraemonWeexLogDataSource shareInstance];
-    [DoraemonWeexInfoDataManager shareInstance];
-#endif
-    
     //开启健康体检
     if ([[DoraemonCacheManager sharedInstance] healthStart] && !self.disableCollectionAppInfo) {
         [[DoraemonHealthManager sharedInstance] startHealthCheck];
@@ -232,7 +221,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonGPSPlugin];
 #endif
 
-    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonH5Plugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonDeleteLocalDataPlugin];
     
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonNSLogPlugin];
@@ -273,13 +261,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonViewMetricsPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonHierarchyPlugin];
     
-    #pragma mark - Weex专项工具
-    #if DoraemonWithWeex
-        [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexLogPlugin];
-        [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexStoragePlugin];
-        [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexInfoPlugin];
-        [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexDevToolPlugin];
-    #endif
 }
 
 /**
@@ -523,14 +504,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
                                    @{kPluginName:@"DoraemonGPSPlugin"},
                                    @{kAtModule:DoraemonLocalizedString(@"常用工具")},
                                    @{kBuriedPoint:@"dokit_sdk_comm_ck_gps"}
-                                   ],
-                           @(DoraemonManagerPluginType_DoraemonH5Plugin) : @[
-                                   @{kTitle:DoraemonLocalizedString(@"H5任意门")},
-                                   @{kDesc:DoraemonLocalizedString(@"H5任意门")},
-                                   @{kIcon:@"doraemon_h5"},
-                                   @{kPluginName:@"DoraemonH5Plugin"},
-                                   @{kAtModule:DoraemonLocalizedString(@"常用工具")},
-                                   @{kBuriedPoint:@"dokit_sdk_comm_ck_h5"}
                                    ],
                            @(DoraemonManagerPluginType_DoraemonDeleteLocalDataPlugin) : @[
                                    @{kTitle:DoraemonLocalizedString(@"清理缓存")},

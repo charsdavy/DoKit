@@ -32,8 +32,6 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
     DoraemonManagerPluginType_DoraemonSandboxPlugin,
     // MockGPS
     DoraemonManagerPluginType_DoraemonGPSPlugin,
-    // H5任意门
-    DoraemonManagerPluginType_DoraemonH5Plugin,
     // Crash查看
     DoraemonManagerPluginType_DoraemonCrashPlugin,
     // 子线程UI

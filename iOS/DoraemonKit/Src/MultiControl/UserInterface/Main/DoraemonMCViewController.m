@@ -6,7 +6,6 @@
 //
 
 #import "DoraemonMCViewController.h"
-#import "DoraemonQRScanView.h"
 #import "DoraemonDefine.h"
 #import "DoraemonMCServer.h"
 #import "DoraemonMCClient.h"

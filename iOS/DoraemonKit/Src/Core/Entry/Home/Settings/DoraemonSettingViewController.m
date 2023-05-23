@@ -10,7 +10,6 @@
 #import "DoraemonCellButton.h"
 #import "DoraemonKitManagerViewController.h"
 #import "DoraemonSettingCell.h"
-#import "DoraemonDefaultWebViewController.h"
 #import "UIViewController+Doraemon.h"
 
 @interface DoraemonSettingViewController ()<DoraemonCellButtonDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -101,10 +100,6 @@
     if ([[cellData objectForKey:@"type"] isEqualToString:@"native"]) {
         DoraemonKitManagerViewController *vc = [[DoraemonKitManagerViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if ([[cellData objectForKey:@"type"] isEqualToString:@"web"]) {
-        DoraemonDefaultWebViewController *webVc = [[DoraemonDefaultWebViewController alloc] init];
-        webVc.h5Url = cellData[@"link"];
-        [self.navigationController pushViewController:webVc animated:YES];
     }
 }
 #pragma mark -- Getter

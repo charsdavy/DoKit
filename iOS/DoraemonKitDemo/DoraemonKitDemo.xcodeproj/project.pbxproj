@@ -27,7 +27,6 @@
 		0AFBC55223BAE6F80099A8BD /* DoraemonDemoNetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBC55023BAE6F80099A8BD /* DoraemonDemoNetTableViewCell.m */; };
 		B65C2263AF96F94C50A222DF /* libPods-DoraemonKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E964A2D92411C9DC5482EF /* libPods-DoraemonKitDemo.a */; };
 		DA0C6F331FDEBC2E00F43588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0C6F311FDEBC2E00F43588 /* LaunchScreen.storyboard */; };
-		DA0C6F3A1FDEBE3800F43588 /* TestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C6F391FDEBE3800F43588 /* TestPlugin.m */; };
 		DA4AD81A224E0EC8006F767C /* Doraemon.docx in Resources */ = {isa = PBXBuildFile; fileRef = DA4AD817224E0EC8006F767C /* Doraemon.docx */; };
 		DA4AD81B224E0EC8006F767C /* Doraemon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DA4AD818224E0EC8006F767C /* Doraemon.pdf */; };
 		DA4AD81C224E0EC8006F767C /* Doraemon.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = DA4AD819224E0EC8006F767C /* Doraemon.xlsx */; };
@@ -40,7 +39,6 @@
 		DAC8A87C1FDE2C3B00F03E6F /* DoKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8A87B1FDE2C3B00F03E6F /* DoKitAppDelegate.m */; };
 		DAC8A8841FDE2C3B00F03E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC8A8831FDE2C3B00F03E6F /* Assets.xcassets */; };
 		DAC8A88A1FDE2C3B00F03E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8A8891FDE2C3B00F03E6F /* main.m */; };
-		DAD46BDA1FE6B7AF00E3E7BC /* StartPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD46BD91FE6B7AF00E3E7BC /* StartPlugin.m */; };
 		DAE7BFAD20205C20008D49D8 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BFAC20205C20008D49D8 /* NSObject+Runtime.m */; };
 		DAFE052521BD4A4D00F97A59 /* DoraemonDemoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE050721BD4A4C00F97A59 /* DoraemonDemoUIViewController.m */; };
 		DAFE052621BD4A4D00F97A59 /* DoraemonDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE050A21BD4A4C00F97A59 /* DoraemonDemoHomeViewController.m */; };
@@ -94,8 +92,6 @@
 		0AFBC55123BAE6F80099A8BD /* DoraemonDemoNetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonDemoNetTableViewCell.h; sourceTree = "<group>"; };
 		29E964A2D92411C9DC5482EF /* libPods-DoraemonKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoraemonKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C6F321FDEBC2E00F43588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DA0C6F381FDEBE3800F43588 /* TestPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPlugin.h; sourceTree = "<group>"; };
-		DA0C6F391FDEBE3800F43588 /* TestPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPlugin.m; sourceTree = "<group>"; };
 		DA4AD817224E0EC8006F767C /* Doraemon.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doraemon.docx; sourceTree = "<group>"; };
 		DA4AD818224E0EC8006F767C /* Doraemon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Doraemon.pdf; sourceTree = "<group>"; };
 		DA4AD819224E0EC8006F767C /* Doraemon.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doraemon.xlsx; sourceTree = "<group>"; };
@@ -115,8 +111,6 @@
 		DAC8A87B1FDE2C3B00F03E6F /* DoKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoKitAppDelegate.m; sourceTree = "<group>"; };
 		DAC8A8831FDE2C3B00F03E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC8A8891FDE2C3B00F03E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAD46BD81FE6B7AF00E3E7BC /* StartPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartPlugin.h; sourceTree = "<group>"; };
-		DAD46BD91FE6B7AF00E3E7BC /* StartPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPlugin.m; sourceTree = "<group>"; };
 		DAE7BFAB20205C20008D49D8 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		DAE7BFAC20205C20008D49D8 /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		DAFE050721BD4A4C00F97A59 /* DoraemonDemoUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonDemoUIViewController.m; sourceTree = "<group>"; };
@@ -239,17 +233,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA0C6F371FDEBE2500F43588 /* Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				DA0C6F381FDEBE3800F43588 /* TestPlugin.h */,
-				DA0C6F391FDEBE3800F43588 /* TestPlugin.m */,
-				DAD46BD81FE6B7AF00E3E7BC /* StartPlugin.h */,
-				DAD46BD91FE6B7AF00E3E7BC /* StartPlugin.m */,
-			);
-			path = Plugin;
-			sourceTree = "<group>";
-		};
 		DA63F1D121C8CC9700E0D9F5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,7 +292,6 @@
 				DA63F1D121C8CC9700E0D9F5 /* Resource */,
 				DAFE050521BD4A4C00F97A59 /* DemoVC */,
 				DAE7BFAA20205BCF008D49D8 /* Util */,
-				DA0C6F371FDEBE2500F43588 /* Plugin */,
 				DA0C6F311FDEBC2E00F43588 /* LaunchScreen.storyboard */,
 				DAC8A87A1FDE2C3B00F03E6F /* DoKitAppDelegate.h */,
 				DAC8A87B1FDE2C3B00F03E6F /* DoKitAppDelegate.m */,
@@ -601,7 +583,6 @@
 				097F6DA326D53E5D00841403 /* DoraemonDemoMultiSlideView.m in Sources */,
 				DAFE052D21BD4A4D00F97A59 /* DoraemonDemoMockGPSAnnotation.m in Sources */,
 				DAFE052921BD4A4D00F97A59 /* DoraemonDemoCrashViewController.m in Sources */,
-				DA0C6F3A1FDEBE3800F43588 /* TestPlugin.m in Sources */,
 				DABBE3B221D3AA260070518E /* DoraemonUIWebViewViewController.m in Sources */,
 				0A5399852349ED5B00C47CB3 /* DoraemonDemoMemoryLeakViewController.m in Sources */,
 				0A5399882349EE7E00C47CB3 /* DoraemonDemoMemoryLeakModel.m in Sources */,
@@ -625,7 +606,6 @@
 				0A6C9CED2423219400BAEF5E /* DoraemonDemoURLProtocol2.m in Sources */,
 				0A53998B2349EE9500C47CB3 /* DoraemonDemoMemoryLeakView.m in Sources */,
 				DAFE052521BD4A4D00F97A59 /* DoraemonDemoUIViewController.m in Sources */,
-				DAD46BDA1FE6B7AF00E3E7BC /* StartPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
